@@ -5,16 +5,13 @@ import org.junit.Test;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest {
+public class AmusementCenterStoreTest {
 
     /**
      * Rigourous Test :-)
      */
     @Test
-    public void testApp()
+    public void makeSureThatWeCanCallHamcrest()
     {
         assertThat(true, equalTo(true));
     }
