@@ -19,4 +19,11 @@ public class AmusementCenterStoreTest {
     ShoppingBasket basket = store.whatCanIBuyWith(0.0);
     assertThat(basket.isEmpty(), equalTo(true));
   }
+
+  @Test
+  public void miaCannotBuyAnythingWhenSheHasFiftyCents() {
+    AmusementCenterStore store = new AmusementCenterStore();
+    ShoppingBasket basket = store.whatCanIBuyWith(0.50);
+    assertThat(basket.isEmpty(), equalTo(true));
+  }
 }
